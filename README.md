@@ -7,58 +7,6 @@ Ce projet est réalisée dans le cadre de l’enseignement “Le projet Géonum�
 L’application donnera suite aux résultats du projet de recherche DILEM (2012-2017), consacré au suivi de personnes sinistrées de l’accident nucléaire de la centrale Fukushima Daiichi (1F) au Japon, et focalisé sur la « zone grise » de l’accident. Il s’agit des territoires contaminés ou suspectés de l’être mais non reconnus officiellement, situés au-delà de la zone d’évacuation définie par le gouvernement en 2011. Des zones sont de nouveau accessibles à partir de 2014. L’ambition du projet était de comprendre dans quelle mesure le risque de contamination et l’incertitude affectent l’identité, la trajectoire et comment ils reconfigurent le parcours de vie de personnes initialement ou progressivement exclues du périmètre de l’évacuation officielle. DILEM a permis d’aller à la rencontre de ces personnes, pour qu’elles témoignent de leur parcours et de leurs dilemmes au cours d’entretiens longitudinaux, répétés chaque année entre 2013 et 2017 et complétés par des questionnaires sociodémographiques.
 Le contexte territorial a considérablement évolué depuis l’accident, tant du point de vue des niveaux de contamination ambiante que de la situation réglementaire, sociale ou sanitaire. La situation est très variable d’un endroit à l’autre, au sein du département de Fukushima comme dans le reste des territoires ayant reçu des retombées radioactives en mars 2011, et même dans les communes initialement évacuées autour de la centrale.
 
-
-
-## Arborescence du Site
-.
-├── index.html
-├── Groupe.html
-├── Individu.html
-├── Informations.html
-├── Server.py
-├── style.css
-├── Header_css_image/
-│   ├── Animation_header_css.css
-│   ├── header.css
-│   ├── Banniére3.png
-├── css_animation_index_source/
-│   ├── animation_page_accueil.css
-│   ├── animation_source.css
-├── data/
-│   ├── Heatmap.geojson
-│   ├── centrale.geojson
-│   ├── centrale.geojson
-│   ├── fukushima.geojson
-│   ├── individus.geojson
-│   ├── japon.geojson
-│   ├── prefecture.geojson
-├── js/
-│   ├── extension.js/
-│   │   └── dist_heatmap/
-│   │   │  └── leaflet_heat.js
-│   │   └── dist_side_panel/
-│   │   │  └── leaflet-sidepanel.css
-│   │   │  └── leaflet-sidepanel.min.js
-│   ├── Leaflet_page_group.js
-│   ├── Leaflet_page_individu.js
-│   ├── lien_source.js
-├── img/
-│   ├── background.jpg
-│   ├── Centrale_aprés.png
-│   ├── Central_avant.png
-│   ├── geonum.png
-│   ├── GitHub-logo.png
-│   ├── Groupe_aprés.png
-│   ├── Groupe_avant.png
-│   ├── Info_aprés.png
-│   ├── infot_avant.png
-│   ├── logo.png
-│   ├── nuclear.png
-│   ├── sentinelle.png
-│   ├── Utilisateur_aprés.png
-│   ├── Utilisateur_avant.png
-└── README.md
-
 ### Description des fichiers et répertoires :
 
 - **index.html**: Fichier principal HTML de l'application web, probablement la page d'accueil du site.
