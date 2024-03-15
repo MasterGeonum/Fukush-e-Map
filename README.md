@@ -53,3 +53,9 @@ Le contexte territorial a considérablement évolué depuis l’accident, tant d
   - Liste des images utilisées dans le site, telles que des logos, des illustrations, etc.
 
 - **README.md**: Fichier README contenant des informations sur le projet et son organisation.
+- 
+
+## Auteur du siteweb 
+
+Réalisé par des étudiants du master Geonum promo 2022-2024 : 
+A. Lamarche-Vadel - B. Ribeyre - E. Rousseau - G. Petavy J. Sauvinet - M. Le Forestier
