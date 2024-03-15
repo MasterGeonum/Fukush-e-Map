@@ -12,43 +12,97 @@ Le contexte territorial a considérablement évolué depuis l’accident, tant d
 ## Arborescence du Site
 .
 ├── index.html
-├── css/
-│   ├── styles.css
-│   └── responsive.css
-├── js/
-│   ├── map.js
-│   ├── data.js
-│   └── utilities.js
-├── img/
-│   ├── icons/
-│   │   ├── radiation.png
-│   │   └── location.png
-│   └── background.jpg
+├── Groupe.html
+├── Individu.html
+├── Informations.html
+├── Server.py
+├── style.css
+├── Header_css_image/
+│   ├── Animation_header_css.css
+│   ├── header.css
+│   ├── Banniére3.png
+├── css_animation_index_source/
+│   ├── animation_page_accueil.css
+│   ├── animation_source.css
 ├── data/
-│   ├── radiation_levels.json
-│   └── map_settings.json
+│   ├── Heatmap.geojson
+│   ├── centrale.geojson
+│   ├── centrale.geojson
+│   ├── fukushima.geojson
+│   ├── individus.geojson
+│   ├── japon.geojson
+│   ├── prefecture.geojson
+├── js/
+│   ├── extension.js/
+│   │   └── dist_heatmap/
+│   │   │  └── leaflet_heat.js
+│   │   └── dist_side_panel/
+│   │   │  └── leaflet-sidepanel.css
+│   │   │  └── leaflet-sidepanel.min.js
+│   ├── Leaflet_page_group.js
+│   ├── Leaflet_page_individu.js
+│   ├── lien_source.js
+├── img/
+│   ├── background.jpg
+│   ├── Centrale_aprés.png
+│   ├── Central_avant.png
+│   ├── geonum.png
+│   ├── GitHub-logo.png
+│   ├── Groupe_aprés.png
+│   ├── Groupe_avant.png
+│   ├── Info_aprés.png
+│   ├── infot_avant.png
+│   ├── logo.png
+│   ├── nuclear.png
+│   ├── sentinelle.png
+│   ├── Utilisateur_aprés.png
+│   ├── Utilisateur_avant.png
 └── README.md
 
 ### Description des fichiers et répertoires :
 
-- **index.html**: Le fichier principal HTML de l'application web.
-  
-- **css/**: Ce répertoire contient les fichiers de style CSS pour le site.
-  - **styles.css**: Styles principaux de l'application.
-  - **responsive.css**: Styles pour la mise en page responsive.
+- **index.html**: Fichier principal HTML de l'application web, probablement la page d'accueil du site.
 
-- **js/**: Ce répertoire contient les fichiers JavaScript pour le site.
-  - **map.js**: Fonctionnalités de la carte interactive.
-  - **data.js**: Gestion des données sur les niveaux de radiation.
-  - **utilities.js**: Fonctions utilitaires réutilisables.
+- **Groupe.html**: Page destinée à la visualisation en groupe, peut-être une section spécifique du site pour les analyses collectives.
 
-- **img/**: Ce répertoire contient les images utilisées dans le site.
-  - **icons/**: Icônes utilisées pour marquer les points d'intérêt sur la carte.
-  - **background.jpg**: Image de fond pour le site.
+- **Individu.html**: Page destinée à la visualisation individuelle, peut-être une section spécifique du site pour les analyses individuelles.
 
-- **data/**: Ce répertoire contient les données nécessaires au fonctionnement de l'application.
-  - **radiation_levels.json**: Données sur les niveaux de radiation dans les différentes zones.
-  - **map_settings.json**: Paramètres de configuration de la carte.
+- **Informations.html**: Page contenant des informations sur le projet, probablement une section dédiée aux détails et explications sur le projet.
 
-- **README.md**: Ce fichier README contenant des informations sur le projet et son organisation.
+- **Server.py**: Fichier Python, probablement utilisé pour la mise en place d'un serveur ou d'une API pour le site web.
+
+- **style.css**: Fichier de style principal pour le site web, utilisé pour définir les styles de l'ensemble du site.
+
+- **Header_css_image/**: Répertoire contenant des fichiers CSS et une image pour l'en-tête du site.
+  - **Animation_header_css.css**: Fichier CSS pour les animations de l'en-tête.
+  - **header.css**: Fichier CSS pour le style de l'en-tête.
+  - **Banniére3.png**: Image de la bannière de l'en-tête.
+
+- **css_animation_index_source/**: Répertoire contenant des fichiers CSS pour les animations spécifiques de la page d'accueil.
+  - **animation_page_accueil.css**: Fichier CSS pour les animations de la page d'accueil.
+  - **animation_source.css**: Fichier CSS pour les animations de la source.
+
+- **data/**: Répertoire contenant des fichiers de données pour le fonctionnement de l'application.
+  - **Heatmap.geojson**: Données au format GeoJSON pour la heatmap.
+  - **centrale.geojson**: Données au format GeoJSON pour les centrales.
+  - **fukushima.geojson**: Données au format GeoJSON pour Fukushima.
+  - **individus.geojson**: Données au format GeoJSON pour les individus.
+  - **japon.geojson**: Données au format GeoJSON pour le Japon.
+  - **prefecture.geojson**: Données au format GeoJSON pour les préfectures.
+
+- **js/**: Répertoire contenant des fichiers JavaScript pour le site.
+  - **extension.js/**: Sous-répertoire contenant des extensions JavaScript.
+    - **dist_heatmap/**: Sous-répertoire contenant des fichiers pour la heatmap.
+      - **leaflet_heat.js**: Script JavaScript pour la heatmap.
+    - **dist_side_panel/**: Sous-répertoire contenant des fichiers pour le panneau latéral.
+      - **leaflet-sidepanel.css**: Fichier CSS pour le panneau latéral.
+      - **leaflet-sidepanel.min.js**: Script JavaScript pour le panneau latéral.
+  - **Leaflet_page_group.js**: Script JavaScript pour la page de visualisation en groupe.
+  - **Leaflet_page_individu.js**: Script JavaScript pour la page de visualisation individuelle.
+  - **lien_source.js**: Script JavaScript pour les liens de source.
+
+- **img/**: Répertoire contenant des images utilisées dans le site.
+  - Liste des images utilisées dans le site, telles que des logos, des illustrations, etc.
+
+- **README.md**: Fichier README contenant des informations sur le projet et son organisation.
 
