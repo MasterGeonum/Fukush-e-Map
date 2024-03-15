@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perception d'un individu</title>
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <!-- Leaflet CSS -->
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+  <!-- Sidebar Leaflet CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="js/extension_js/dist_side_panel/leaflet-sidepanel.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/css_animation_index_source/animation_page_accueil.css">
+  <link rel="stylesheet" href="css/Header_css_image/Animation_header.css">
+  <link rel="stylesheet" href="css/Header_css_image/header.css">
+  <!-- Full screen -->
+</head>
+
+<body>
+  <!-- Header -->
+  <div id="body2">
+    <div class="container">
+      <header id="header2" class="border-bottom lh-1 py-1 fixed-top">
+        <div class="row flex-nowrap justify-content-between align-items-center">
+          <div class="col-6 pt-1">
+            <a class="navbar-brand" href="index.html">
+              <img src="img/logo.png" alt="Bootstrap" width=100% height=100%>
+              <a class="navbar-brand" href="index.html">Fukush-e-map</a>
+            </a>
+          </div>
+          <div class="col-6">
+            <div style="display: flex; flex-wrap: wrap; justify-content: space-around;">
+              <div class="card-container2">
+                <div class="card2">
+                  <a id="lienImage1" href="index.html">
+                    <div class="card--display2" style="display: flex; align-items: center; justify-content: center;">
+                      <img id="imageChanger1" src="img/Centrale_avant.png" class="person-icon">
+                      <span  id = "accueil">Accueil</span>
+                    </div>
+                  </a>
+                  <div class="card--border2"></div>
+                </div>
+              </div>
+
+              <div class="card-container2">
+                <div class="card2">
+                  <a id="lienImage2" href="Individue.html">
+                    <div class="card--display2" style="display: flex; align-items: center; justify-content: center;">
+                      <img id="imageChanger2" src="img/Utilisateur_aprés.png" class="person-icon">
+                      <span  id = "accueil" style="color:#ffffff" >Individu</span>
+                    </div>
+                  </a>
+                  <div class="card--border2"></div>
+                </div>
+              </div>
+
+              <div class="card-container2">
+                <div class="card2">
+                  <a id="lienImage3" href="Groupe.html">
+                    <div class="card--display2" style="display: flex; align-items: center; justify-content: center;">
+                      <img id="imageChanger3" src="img/Groupe_avant.png" alt="Groupe" class="person-icon">
+                      <span  id = "accueil">Groupe</span>
+                    </div>
+                  </a>
+                  <div class="card--border2"></div>
+                </div>
+              </div>
+
+              <div class="card-container2">
+                <div class="card2"> 
+                  <a id="lienImage4" href="Informations.html">
+                    <div class="card--display2" style="display: flex; align-items: center; justify-content: center;">
+                      <img id="imageChanger4" src="img/info_avant.png" alt="Info" class="person-icon">
+                      <span  id = "accueil">Informations</span>
+                    </div>
+                  </a>
+                  <div class="card--border2"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+    </div>
+  </div>
+
+  <div id="map-container-wrapper" class="custom-map-container">
+    <div id="mapContainer1" class="map">
+      <!-- Side Panel left -->
+      <div id="mySidepanelLeft" class="sidepanel" aria-label="side panel" aria-hidden="false">
+        <div class="sidepanel-inner-wrapper">
+          <nav class="sidepanel-tabs-wrapper" aria-label="sidepanel tab navigation">
+            <ul class="sidepanel-tabs">
+              <li class="sidepanel-tab">
+                <a href="#" class="sidebar-tab-link" role="tab" data-tab-link="tab-1">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list"
+                    viewBox="0 0 16 16">
+                    <path fill-rule="evenodd"
+                      d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                  </svg>
+                </a>
+              </li>
+          </nav>
+          <div class="sidepanel-content-wrapper">
+            <div class="sidepanel-content">
+              <div class="sidepanel-tab-content" data-tab-content="tab-1">
+                </h1>
+                <h4>Trajectoire et Perception Individuelle</h4>
+                <hr>
+                <div>
+                  <h5>Choix de l'individu</h5>
+                  <select id="id_dilemSelect" size="10" onchange="toggleBVisibility()">
+                    <option value="">Sélectionnez un ID</option>
+                    <option value="ID01">ID01</option>
+                    <option value="ID02">ID02</option>
+                    <option value="ID03">ID03</option>
+                    <option value="ID04">ID04</option>
+                    <option value="ID05">ID05</option>
+                    <option value="ID06">ID06</option>
+                    <option value="ID07">ID07</option>
+                    <option value="ID08">ID08</option>
+                    <option value="ID09">ID09</option>
+                    <option value="ID10">ID10</option>
+                    <option value="ID11">ID11</option>
+                    <option value="ID12">ID12</option>
+                    <option value="ID13">ID13</option>
+                    <option value="ID14">ID14</option>
+                    <option value="ID15">ID15</option>
+                    <option value="ID16">ID16</option>
+                    <option value="ID17">ID17</option>
+                    <option value="ID18">ID18</option>
+                    <option value="ID19">ID19</option>
+                    <option value="ID20">ID20</option>
+                    <option value="ID21">ID21</option>
+                    <option value="ID22">ID22</option>
+                    <option value="ID23">ID23</option>
+                    <option value="ID24">ID24</option>
+                    <option value="ID25">ID25</option>
+                    <option value="ID26">ID26</option>
+                    <option value="ID27">ID27</option>
+                    <option value="ID28">ID28</option>
+                    <option value="ID29">ID29</option>
+                    <option value="ID30">ID30</option>
+                    <option value="ID31">ID31</option>
+                    <option value="ID32">ID32</option>
+                    <option value="ID33">ID33</option>
+                    <option value="ID34">ID34</option>
+                    <option value="ID35">ID35</option>
+                    <option value="ID36">ID36</option>
+                    <option value="ID37">ID37</option>
+                    <option value="ID38">ID38</option>
+                    <option value="ID38bis">ID38bis</option>
+                    <option value="ID39">ID39</option>
+                    <option value="ID40">ID40</option>
+                    <option value="ID41">ID41</option>
+                    <option value="ID42">ID42</option>
+                    <option value="ID43">ID43</option>
+                    <option value="ID44">ID44</option>
+                    <option value="ID44bis">ID44bis</option>
+                    <option value="ID45">ID45</option>
+                    <option value="ID46">ID46</option>
+                    <option value="ID47">ID47</option>
+                    <option value="ID48">ID48</option>
+                    <option value="ID49">ID49</option>
+                    <option value="ID50">ID50</option>
+                    <option value="ID51">ID51</option>
+                    <option value="ID52">ID52</option>
+                    <option value="ID53">ID53</option>
+                    <option value="ID54">ID54</option>
+                    <option value="ID55">ID55</option>
+                    <option value="ID56">ID56</option>
+                    <option value="ID57">ID57</option>
+                    <option value="ID59">ID59</option>
+                    <option value="ID60">ID60</option>
+                    <option value="ID61">ID61</option>
+                    <option value="ID62">ID62</option>
+                    <option value="ID63">ID63</option>
+                    <option value="ID65">ID65</option>
+                    <option value="ID66">ID66</option>
+                    <option value="ID67">ID67</option>
+                    <option value="ID68">ID68</option>
+                    <option value="ID69">ID69</option>
+                    <option value="ID70">ID70</option>
+                    <option value="ID71">ID71</option>
+                  </select>
+                </div>
+                <hr>
+                <div>
+                  <h5>Étendue de la Carte</h5>
+                  <input type="radio" id="option1" name="options" value="japan" onclick="zoomToJapan()" checked>
+                  <label for="option1">Japon</label><br>
+                  <input type="radio" id="option2" name="options" value="fukushima" onclick="zoomToFukushima()">
+                  <label for="option2">Fukushima</label><br>
+                </div>
+                <hr>
+                <div id="B"  style="display: none;">
+                  <h5>Trajectoire de l'individu</h5>
+                  <button id="toggleLayer1" aria-label="Afficher/masquer la couche"><i id="Trajectoire"
+                      class="far fa-eye"></i></button>
+                  <label for="toggleLayer1">Trajectoire</label><br>
+                  <hr>
+                  <h5>Perception du risque</h5>
+                  <button id="toggleLayer2" aria-label="Afficher/masquer la couche"><i id="Tracer_risques_indiv"
+                      class="far fa-eye"></i></button>
+                  <label for="toggleLayer2">Tracé de la perception du risques</label><br>
+                  <div>
+                  <h6>Choisir une année pour la perception du risque</h6>
+                    <input type="range" id="slider" name="slider" min="2013" max="2017" value="2013" step="2"
+                      list="tickmarks">
+                    <datalist id="tickmarks">
+                      <option value="2013">2013</option>
+                      <option value="2015">2015</option>
+                      <option value="2017">2017</option>
+                    </datalist>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="sidepanel-toggle-container">
+          <button class="sidepanel-toggle-button" type="button" aria-label="toggle side panel"></button>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+  <!-- Footer -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <!-- Leaflet JS -->
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <!-- Sidebar Leaflet JS -->
+  <script src="js/extension_js/dist_side_panel/leaflet-sidepanel.min.js"></script>
+
+  <!-- Your Map Initialization Script -->
+  <script src="js/Leaflet_page_individu.js"></script>
+
+</body>
+
+</html>
