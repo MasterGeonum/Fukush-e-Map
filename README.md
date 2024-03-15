@@ -9,26 +9,26 @@ Le contexte territorial a considérablement évolué depuis l’accident, tant d
 
 ## Description des fichiers et répertoires :
 
-- **index.html**: Fichier principal HTML de l'application web, probablement la page d'accueil du site.
+- **index.html**: Fichier principal HTML de l'application web, la page d'accueil du site.
 
-- **Groupe.html**: Page destinée à la visualisation en groupe, peut-être une section spécifique du site pour les analyses collectives.
+- **Groupe.html**: Page destinée à la visualisation du groupe d'individu 
 
-- **Individu.html**: Page destinée à la visualisation individuelle, peut-être une section spécifique du site pour les analyses individuelles.
+- **Individu.html**: Page destinée à la visualisation individuelle
 
-- **Informations.html**: Page contenant des informations sur le projet, probablement une section dédiée aux détails et explications sur le projet.
+- **Informations.html**: Page contenant des informations sur le projet, section dédiée aux détails et explications sur le projet.
 
-- **Server.py**: Fichier Python, probablement utilisé pour la mise en place d'un serveur ou d'une API pour le site web.
+- **Server.py**: Fichier Python pour la mise en place du server
+  
+- **style.css**: Fichier de style principal pour le site web
 
-- **style.css**: Fichier de style principal pour le site web, utilisé pour définir les styles de l'ensemble du site.
-
-- **Header_css_image/**: Répertoire contenant des fichiers CSS et une image pour l'en-tête du site.
+- **Header_css_image/**: Répertoire contenant des fichiers CSS pour l'en-tête du site.
   - **Animation_header_css.css**: Fichier CSS pour les animations de l'en-tête.
   - **header.css**: Fichier CSS pour le style de l'en-tête.
   - **Banniére3.png**: Image de la bannière de l'en-tête.
 
-- **css_animation_index_source/**: Répertoire contenant des fichiers CSS pour les animations spécifiques de la page d'accueil.
+- **css_animation_index_source/**: Répertoire contenant des fichiers CSS pour les animations spécifiques de la page d'accueil et de la page informations
   - **animation_page_accueil.css**: Fichier CSS pour les animations de la page d'accueil.
-  - **animation_source.css**: Fichier CSS pour les animations de la source.
+  - **animation_source.css**: Fichier CSS pour les animations de la page informations.
 
 - **data/**: Répertoire contenant des fichiers de données pour le fonctionnement de l'application.
   - **Heatmap.geojson**: Données au format GeoJSON pour la heatmap.
