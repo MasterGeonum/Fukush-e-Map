@@ -57,5 +57,5 @@ Le contexte territorial a considérablement évolué depuis l’accident, tant d
 
 ## Auteur
 
-Réalisé par des étudiants du master Geonum (promo 2022-2024)et du master Sentinelle : 
+Réalisé par des étudiants du master Geonum (promo 2022-2024) et du master Sentinelle : 
 A. Lamarche-Vadel - B. Ribeyre - E. Rousseau - G. Petavy J. Sauvinet - M. Le Forestier
