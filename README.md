@@ -1,26 +1,34 @@
 # FUKUSH-E-MAP
 
-FUKUSH-E-MAP est un projet de cartographie interactive visant à fournir des informations en temps réel sur les niveaux de radiation dans les zones affectées par l'accident nucléaire de Fukushima. Ce projet est conçu pour aider les résidents locaux, les autorités et les organisations humanitaires à prendre des décisions éclairées concernant leur sécurité et leurs déplacements dans la région.
+Ce projet est réalisée dans le cadre de l’enseignement “Le projet Géonumérique” du Master 2 GéoNum de l’université Lumière Lyon 2, en partenariat avec le Master 2 SENTINELLES de l’université Jean Moulin Lyon 3.
+
+## Contexte du projet 
+
+L’application donnera suite aux résultats du projet de recherche DILEM (2012-2017), consacré au suivi de personnes sinistrées de l’accident nucléaire de la centrale Fukushima Daiichi (1F) au Japon, et focalisé sur la « zone grise » de l’accident. Il s’agit des territoires contaminés ou suspectés de l’être mais non reconnus officiellement, situés au-delà de la zone d’évacuation définie par le gouvernement en 2011. Des zones sont de nouveau accessibles à partir de 2014. L’ambition du projet était de comprendre dans quelle mesure le risque de contamination et l’incertitude affectent l’identité, la trajectoire et comment ils reconfigurent le parcours de vie de personnes initialement ou progressivement exclues du périmètre de l’évacuation officielle. DILEM a permis d’aller à la rencontre de ces personnes, pour qu’elles témoignent de leur parcours et de leurs dilemmes au cours d’entretiens longitudinaux, répétés chaque année entre 2013 et 2017 et complétés par des questionnaires sociodémographiques.
+Le contexte territorial a considérablement évolué depuis l’accident, tant du point de vue des niveaux de contamination ambiante que de la situation réglementaire, sociale ou sanitaire. La situation est très variable d’un endroit à l’autre, au sein du département de Fukushima comme dans le reste des territoires ayant reçu des retombées radioactives en mars 2011, et même dans les communes initialement évacuées autour de la centrale.
+
+
 
 ## Arborescence du Site
 .
 ├── index.html
 ├── css/
-│ ├── styles.css
-│ └── responsive.css
+│   ├── styles.css
+│   └── responsive.css
 ├── js/
-│ ├── map.js
-│ ├── data.js
-│ └── utilities.js
+│   ├── map.js
+│   ├── data.js
+│   └── utilities.js
 ├── img/
-│ ├── icons/
-│ │ ├── radiation.png
-│ │ └── location.png
-│ └── background.jpg
+│   ├── icons/
+│   │   ├── radiation.png
+│   │   └── location.png
+│   └── background.jpg
 ├── data/
-│ ├── radiation_levels.json
-│ └── map_settings.json
+│   ├── radiation_levels.json
+│   └── map_settings.json
 └── README.md
+
 ### Description des fichiers et répertoires :
 
 - **index.html**: Le fichier principal HTML de l'application web.
