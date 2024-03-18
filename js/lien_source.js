@@ -9,7 +9,7 @@ Github.addEventListener("mouseout", function() {
 });
 
 Github.addEventListener("click", function() {
-    window.open("https://github.com/bribeyre/Fukush-e-map", "_blank");
+    window.open("https://github.com/bribeyre/Fukush-e-Map_Geonum_2024", "_blank");
 });
 
 var Heatmap = document.getElementById("Heatmap");
@@ -23,5 +23,5 @@ Heatmap.addEventListener("mouseout", function() {
 });
 
 Heatmap.addEventListener("click", function() {
-    window.open("https://github.com/bribeyre/Fukush-e-map", "_blank");
+    window.open("https://jciv.iidj.net/map/list/", "_blank");
 });
