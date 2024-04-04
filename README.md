@@ -53,7 +53,6 @@ Le contexte territorial a considérablement évolué depuis l’accident, tant d
   - Liste des images utilisées dans le site, telles que des logos, des illustrations, etc.
 
 - **README.md**: Fichier README contenant des informations sur le projet et son organisation.
-- 
 
 ## Auteur
 
