@@ -1,0 +1,31 @@
+services:
+  db:
+    image: postgis/postgis:13-3.2-alpine
+    restart: always
+    environment:
+      TZ: Europe/Paris
+      POSTGRES_DB: $POSTGRES_DB
+      POSTGRES_USER: $POSTGRES_USER
+      POSTGRES_PASSWORD: $POSTGRES_PASSWORD
+    volumes:
+      - db-data:/var/lib/postgresql/data
+
+  api:
+    build: .
+    restart: always
+    environment:
+      - PGSERVICEFILE=/app/pg_service.conf
+    ports:
+      - "5000:5000"
+    volumes:
+      - ./pg_service.conf:/app/pg_service.conf:ro
+
+  front:
+    image: nginx:latest
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/usr/share/nginx/html:ro
+
+volumes:
+  db-data:

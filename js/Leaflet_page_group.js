@@ -308,7 +308,7 @@ function loadConsensusFukushima() {
     }
 
     // Construire l'URL avec les paramètres de requête annee, zone et option
-    var url = 'http://localhost:5000/fukushima?annee=' + selectedYear
+    var url = 'http://fukush-e-map.evs.ens-lyon.fr/fukushima?annee=' + selectedYear
     //on va chercher la zone
     if (zoneValue !== 3) {
       url += '&zone=' + zoneValue
@@ -444,7 +444,7 @@ function loadConsensusJapon() {
     }
 
     // Construire l'URL avec les paramètres de requête annee, zone et option
-    var url = 'http://localhost:5000/japon?annee=' + selectedYear
+    var url = 'http://fukush-e-map.evs.ens-lyon.fr/japon?annee=' + selectedYear
     //on va chercher la zone
     if (zoneValue !== 3) {
       url += '&zone=' + zoneValue
