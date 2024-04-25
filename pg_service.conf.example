@@ -1,0 +1,6 @@
+[local_fukushemap]
+host=db
+port=5432
+dbname=fukushemap
+user=
+password=

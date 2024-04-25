@@ -133,4 +133,4 @@ res AS (
     return jsonify({'min_count': min_count, 'max_count': max_count, 'geojson': geojson})
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0', port=5000, debug=True)
+    app.run(host='0.0.0.0', port=5000, debug=False)

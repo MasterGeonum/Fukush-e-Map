@@ -1,4 +1,6 @@
 FROM python:3.10
+LABEL org.opencontainers.image.source="https://github.com/MasterGeonum/Fukush-e-Map"
+
 WORKDIR /app
 
 COPY requirements.txt /app
