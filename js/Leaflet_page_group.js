@@ -308,7 +308,7 @@ function loadConsensusFukushima() {
     }
 
     // Construire l'URL avec les paramètres de requête annee, zone et option
-    var url = '/api/fukushima?annee=' + selectedYear
+    var url = 'api/fukushima?annee=' + selectedYear
     //on va chercher la zone
     if (zoneValue !== 3) {
       url += '&zone=' + zoneValue
@@ -444,7 +444,7 @@ function loadConsensusJapon() {
     }
 
     // Construire l'URL avec les paramètres de requête annee, zone et option
-    var url = '/api/japon?annee=' + selectedYear
+    var url = 'api/japon?annee=' + selectedYear
     //on va chercher la zone
     if (zoneValue !== 3) {
       url += '&zone=' + zoneValue
